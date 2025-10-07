@@ -12,7 +12,7 @@
       color: #e0e0e0;
       margin: 0;
       height: 100vh;
-      overflow: scroll;     
+      overflow: scroll;    
     }
     header {
       background-color: #000000a1;
@@ -75,4 +75,5 @@
     a {
       text-decoration: none;
       color: white;
+
     }
