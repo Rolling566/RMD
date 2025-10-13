@@ -142,9 +142,10 @@
     .fundoazul {
       height: 290px;
       border-radius: 50px;
-      border: 3px solid #38bdf8;
+      border: 3px solid #f8a528;
       transition: transform 0.5s ease;
     }
     .fundoazul:hover {
       transform: scale(1.06);
     }
+
