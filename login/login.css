@@ -30,8 +30,6 @@ body {
 .int_login h2{
     color: #f8a528;
     font-size: 30px;
-    position: absolute;
-    top: 5%;
 }
 .inserir {
     padding: 5px;
@@ -77,4 +75,5 @@ a:hover {
 }
 .esquecipass:hover {
     transform: scale(1.05);
+
 }
