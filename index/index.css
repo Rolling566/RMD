@@ -183,7 +183,7 @@ html {
 }
 .dividir {
   padding: 3% 0%;
-  height: 40em;
+  height: 50em;
 }
 .notitle strong {
   font-size: 1.5em;
@@ -196,7 +196,7 @@ html {
   padding: 30px 20px;
   background-color: #020c13a2;
   width: 80%;
-  height: 40em;
+  height: 50em;
   max-width: 1000px;
   border-radius: 3.4%;
   box-shadow: 2px 2px 20px #020617ce;   
@@ -226,7 +226,7 @@ html {
   border: 2px solid rgba(0, 0, 0, 0.137);
   padding: 15px 15px;
   width: 100%;
-  height: 94%;
+  height: 100%;
   border-radius: 20px; 
   max-height: 40em; 
   overflow: hidden;
@@ -246,7 +246,7 @@ html {
   align-items: center;
   justify-content: space-between;
   height: 100%;
-  font-size: 1em;
+  font-size: 0.96em;
 }
 hr {
   width: 100%;
@@ -355,4 +355,5 @@ footer {
   padding: 20px;
   margin-top: 10px;
 }
+
 
