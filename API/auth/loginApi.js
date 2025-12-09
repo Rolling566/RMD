@@ -33,7 +33,7 @@ async function  fetchAcc(e) {
         localStorage.setItem('refresh', data.refresh_token)
         localStorage.setItem('token', data.access_token);
 
-        window.location.href = '../../pt/start.html';
+        window.location.href = '../../userPages/start.html';
     } 
     catch (error) {
         let erroTela = {
@@ -58,3 +58,4 @@ async function  fetchAcc(e) {
         erroTela.show(error.message);
     }
 }
+
