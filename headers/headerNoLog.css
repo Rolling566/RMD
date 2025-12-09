@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at center,
+  #005E96 0%,
+  #015589 40%,
+  #0D649B 60%,
+  #093D62 100%);
+  font: normal 1em 'Figtree', sans-serif;
+  color: #e0e0e0;
+  height: 100dvh;
+  overflow-y: scroll;    
+  position: relative; 
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #FF8E1C;
+  border-radius: 10px;
+}
+header {
+  background-color: #000000a1;
+  color: #fff;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+  transition: all 0.5 ease-out;
+  position: fixed;
+  z-index: 99999;
+  width: 100%;
+  top: 0;
+
+}
+header a {
+  color: rgb(250, 250, 250);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+header h1:hover {
+  transform: scale(1.04);
+}
+.ops {
+  display: flex;
+  align-items: start;
+  margin-left: -6%;
+  flex-wrap: wrap;
+}
+
+.navegacao {
+  color: #fff;
+  margin: 0 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.9s ease;
+  cursor: pointer;
+  
+}
+.navegacao:hover {
+  display: inline-block;
+  color: hsl(30, 100%, 75%); 
+  transform: scale(1.2);
+      
+}
+.login a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8b8b8b25;
+  border-radius: 10px;
+  justify-content: center;
+}
+.login a:hover {
+  background-color: #3838382f;
+  transform: scale(1.1);
+  color: #FF8E1C;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+
+

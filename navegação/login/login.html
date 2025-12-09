@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../headers/headerNoLog.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <!--Iniciar Sessão-->
+    <a href="../../index.html"><img src="../../imagens/Logotipo/RMD logotipo transparente.png" alt="logotipo RMD" class="logotipo"></a>
+    <form class="int_login" id="int_login">
+        <h2>Faça o seu login</h2>  
+        <!--mensagem de erro-->
+        <div id="passERR1">
+            <span id="passERR"></span>
+            <span id="close"></span>
+        </div>    
+
+        <div class="inserir">
+            <input type="text" placeholder="Insira o seu nome de usuário" id="userEmailLog" required >
+        </div>
+        <div class="inserir">            
+            <input type="password" placeholder="Palavra-passe" id="userPassordLog" required class="passShow">
+            <span class="toggle-eye"><img src="Img/eyeUnShow.png" alt="eyeUnShow." class="toggle-eyeImg"></span>
+        </div>
+        <div class="botoes">
+            <button type="submit" id="loginBtt">Inciar sessão</button>
+        </div>
+        <p class="esquecipass"><a href="RecuperarPass/recoverPAss.html" target="_self" rel="next">Esqueci a palavra passe</a></p>
+        <p>Caso seja novo por aqui <span id="criarCon">Criar conta.</span></p>
+    </form> 
+
+    <!--Criar nova conta--> 
+    <form class="newAccount" id="newAccount">
+        <span id="fechar"> &larr; Voltar para o login</span>
+
+        <h2>Preencha os dados da conta</h2>
+
+        <div class="formulario" id="form">  
+            <div class="param">
+                <label for="name">Nome completo</label>
+                <input type="text" placeholder="Insira o seu nome e sobrenome" id='name' required>
+            </div>
+            
+            <div class="param">
+                <label for="user">Nome do artista/banda/produtor</label>
+                <input type="text" placeholder="Insira o nome de usuário" id='user' required>
+            </div>
+
+            <div class="param">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Insira o seu email" required id="email">
+
+            </div>
+            
+            <div class="pass">
+                <div class="param">
+                    <label for="password[0]">Palavra passe</label>
+                    <input type="password" placeholder="Insira a palavra passe" id='passwordNova' required class="passShow passToggle">
+
+                    <span class="toggle-eye"><img src="Img/eyeUnShow.png" alt="eyeUnShow." class="toggle-eyeImg"></span>
+                </div>
+                <div class="param">
+                    <label for="password[1]">Confirmar palavra passe</label>
+                    <input type="password" placeholder="Confirme sua palavra passe" id='passwordNova2' required class="passShow passToggle">
+
+                    <span class="toggle-eye"><img src="Img/eyeUnShow.png" alt="eyeUnShow." class="toggle-eyeImg"></span> 
+                </div>
+            </div> 
+
+            <div class="checkboxes">
+                <div class="box">
+                    <input type="checkbox" id='terms' required>
+                    <label for="terms">I accept the terms and conditions.</label>                   
+                </div>
+                <div class="box">
+                    <input type="checkbox" id='noti'>
+                    <label for="terms">I want to be notified about every news.</label>                  
+                </div>
+            </div>
+            <button type="submit">Criar conta</button>   
+        </div>       
+    </form> 
+
+    <p>Johnny é gay</p>
+    <script src="login.js"></script>  
+    <script src="../../API/auth/passRes.js"></script>  
+    <script src="../../API/auth/loginApi.js"></script>  
+    <script src="../../API/auth/register.js"></script>  
+    <script src="../../API/auth/token.js"></script>  
+    <script src="../../headers/header.js"></script>  
+</body>
+</html>
