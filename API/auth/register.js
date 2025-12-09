@@ -26,7 +26,7 @@ async function newUser(e) {
             email: String(emailNewAcc),
             name: String(name),
             //username: userName,
-            password: (newUserPass2),
+            password: String(newUserPass2),
             role: "customer",    
             avatar: "https://i.pravatar.cc/150?img=3"         
         }
@@ -86,4 +86,5 @@ async function newUser(e) {
             erroTela.show(error.message);
         }
     }
+
 }
